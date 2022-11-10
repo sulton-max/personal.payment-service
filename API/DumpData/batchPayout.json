@@ -1,0 +1,40 @@
+{
+  "sender_batch_header": {
+    "sender_batch_id": "Payouts_{{$timestamp}}",
+    "email_subject": "You have a payout!",
+    "email_message": "You have received a payout! Thanks for using our service!"
+  },
+  "items": [
+    {
+      "recipient_type": "EMAIL",
+      "amount": {
+        "value": "10.00",
+        "currency": "USD"
+      },
+      "note": "Thanks for your patronage!",
+      "sender_item_id": "201403140001",
+      "receiver": "{{$randomEmail}}",
+      "notification_language": "en-US"
+    },
+    {
+      "recipient_type": "PHONE",
+      "amount": {
+        "value": "20.00",
+        "currency": "USD"
+      },
+      "note": "Thanks for your support!",
+      "sender_item_id": "201403140002",
+      "receiver": "1-{{$randomPhoneNumber}}"
+    },
+    {
+      "recipient_type": "PAYPAL_ID",
+      "amount": {
+        "value": "30.00",
+        "currency": "USD"
+      },
+      "note": "Thanks for your patronage!",
+      "sender_item_id": "201403140003",
+      "receiver": "G83KXTJ5EHCQ2"
+    }
+  ]
+}
